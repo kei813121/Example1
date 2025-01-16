@@ -8,6 +8,7 @@ data <- read.table(file, skip = 2, header = FALSE, sep = "\t", quote = "", check
 header[1] <- "gene_id"
 names(data) <- header
 
+# This is test
 header2 <- scan(file, skip = 1, nlines = 1, sep="\t", what = character())
 
 LumA <- data[data$gene_id %in% first10,header2=='Luminal A']
